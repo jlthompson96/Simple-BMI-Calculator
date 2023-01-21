@@ -1,11 +1,12 @@
 weight = input("What is your weight (in lbs)? ")
-
+w = float(weight)
 height = input("What is your height (in inches)? ")
+h = float(height)
 
-def calcBMI():
-    return 703 * weight/pow(height,2)
+def calc_bmi():
+    return 703 * w/pow(h,2)
 
-bmi = calcBMI()
+bmi = calc_bmi()
 
 def output():
     if bmi > 30:
